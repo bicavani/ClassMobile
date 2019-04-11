@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ClassMobile</title>
+  <script src="function.js"></script>
+</head>
+<body>
+  <table id="nokia" style="border: 1px solid black;">
+    <tr>
+      <th colspan="4">NOKIA</th>
+    </tr>
+    <tr>
+      <td id="batteryNokia">Battery</td>
+      <td><button id="turnOn1" type="button" onclick="turnOnNokia()">ON</button></td>
+      <td><button id="turnOff1" type="button" onclick="turnOffNokia()">OFF</button></td>
+      <td><button id="charge1" type="button" onclick="chargeNokia()">CHARGE</button></td>
+    </tr>
+    <tr>
+      <td colspan="3"><textarea id="msg1"
+                                style="height: 150px; visibility: hidden;"></textarea></td>
+      <td><button type="button" onclick="sentMessageInNokia()">Sent</button></td>
+    </tr>
+    <tr>
+      <td colspan="2"><button id="viewInbox1" type="button" onclick="">Inbox</button></td>
+      <td colspan="2"><button id="viewSent1" type="button" onclick="viewOutboxInNokia()">Outbox</button></td>
+    </tr>
+  </table><br><br>
+  <table id="iphone" style="border: 1px solid black;">
+    <tr>
+      <th colspan="4">IPHONE</th>
+    </tr>
+    <tr>
+      <td id="batteryIphone">Battery</td>
+      <td><button id="turnOn2" type="button" onclick="turnOnIphone()">ON</button></td>
+      <td><button id="turnOff2" type="button" onclick="turnOffIphone()">OFF</button></td>
+      <td><button id="charge2" type="button" onclick="">CHARGE</button></td>
+    </tr>
+    <tr>
+      <td colspan="3"><input id="msg2" type="text"
+                             style="height: 200px;"></td>
+      <td><button id="sentMessage2" type="button" onclick="">Sent</button></td>
+    </tr>
+    <tr>
+      <td colspan="2"><button id="viewInbox2" type="button" onclick="viewInboxInIphone()">Inbox</button></td>
+      <td colspan="2"><button id="viewSent2" type="button" onclick="">Outbox</button></td>
+    </tr>
+  </table>
+  <script src="main.js"></script>
+</body>
+</html>
